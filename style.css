@@ -70,23 +70,62 @@ nav li a {
 .banner_description {
     color: #727272;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
+
 /* responsive media queries */
 /* mobile divices */
-@media screen and (max-width: 576px){
-    header{
+@media screen and (max-width: 576px) {
+    header {
         padding: 20px;
     }
+
     nav {
         flex-direction: column;
     }
 }
+
 /* tablet or medium divices */
-@media screen and  (min-width: 576px) and (max-width:980px) {
+@media screen and (min-width: 576px) and (max-width:980px) {
     nav {
         flex-direction: column;
     }
+}
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* fetures_container_style */
+.fetures_container {
+    display: flex;
+    align-items: center;
+}
+
+.fetures_img_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.fetures_content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.fetures_content_taitle {
+   font-size: 2.8rem;
+}
+.fetures_content_taitle .Quick_list{
+    color: #727272;
+    font-weight: 500;
+}
+.fetures_content_taitle .text_Features{
+    color: #FF900E;
+    font-weight: 700;
 }
